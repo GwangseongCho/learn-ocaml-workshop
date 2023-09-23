@@ -106,7 +106,7 @@ fun tricks!
    visually. Extend the interface, game logic and scaffold to produce a
    smoothly-animated Frogger that also plays right.
 
-***Add dune project to fix an error
+**Add dune project to fix an error
 ***"I cannot find the root of the current workspace/project.
 ***If you would like to create a new dune project, you can type:"
 ***Add -js- in modes to fix an error
