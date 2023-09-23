@@ -1,11 +1,3 @@
-; Add dune project to fix an error
-; "I cannot find the root of the current workspace/project.
-;  If you would like to create a new dune project, you can type:"
-; Add -js- in modes to fix an error
-;  "Error: No rule found for main.bc.js
-;   -> required by alias DEFAULT in dune:9
-;   make: *** [all] Error 1 "   
-
 (executable
  (modes byte exe js)
  (name main)
