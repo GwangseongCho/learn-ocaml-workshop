@@ -1,0 +1,23 @@
+; Add dune project to fix an error
+; "I cannot find the root of the current workspace/project.
+;  If you would like to create a new dune project, you can type:"
+; Add -js- in modes to fix an error
+;  "Error: No rule found for main.bc.js
+;   -> required by alias DEFAULT in dune:9
+;   make: *** [all] Error 1 "   
+
+(executable
+ (modes byte exe js)
+ (name main)
+ (preprocess
+  (pps js_of_ocaml-ppx ppx_jane))
+ (modules_without_implementation suggested_frogger)
+ (libraries base js_of_ocaml))
+
+(alias
+ (name DEFAULT)
+ (deps
+  main.bc.js
+  index.html
+  (glob_files assets/*.png)
+  Dockerfile))

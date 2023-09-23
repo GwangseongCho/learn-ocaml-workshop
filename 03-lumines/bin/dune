@@ -1,0 +1,6 @@
+;; -*- scheme -*-
+
+(executables
+ (modes byte exe)
+ (names lumines)
+ (libraries async graphics base lib))
